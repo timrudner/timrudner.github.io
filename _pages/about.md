@@ -1,26 +1,38 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: >
+  <b>Data Science Assistant Professor, Faculty Fellow, and Instructor</b>, <a href='https://cds.nyu.edu/'>Center for Data Science</a>, New York University<br>
+  <b>AI Fellow</b>, <a href='https://cset.georgetown.edu/'>Center for Security & Emerging Technology</a>, Georgetown University<br>
+  
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: timrudner.png
   image_circular: false # crops the image to make it circular
+  # address: >
+  #   <p><span style="float:right;">CDS, Room 614</span></p><br>
+  #   <p><span style="float:right;">60 5th Ave</span></p>
+  #   <p><span style="float:right;">New York, NY 10011</span></p>
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p style="text-align: center;">tim.rudner [at] nyu.edu</p><br>
+    &nbsp;<br>
+
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+policy_papers: true # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+The goal of my research is to develop methods and theoretical insights that enable the safe deployment of machine learning systems in safety-critical settings by drawing on tools from **probabilistic machine learning**. &nbsp; I am particularly interested in Bayesian uncertainty quantification in deep learning, function-space regularization methods for neural networks, probabilistic inference in reinforcement learning, probabilistic machine learning methods for healthcare and science, and AI safety.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+**Bio:** I am a Data Science Assistant Professor, Faculty Fellow, and Instructor at New York University. Before joining New York University, I conducted PhD research on probabilistic machine learning in the Department of Computer Science at the University of Oxford, where I was advised by [Yarin Gal](https://www.cs.ox.ac.uk/people/yarin.gal) and [Yee Whye Teh](http://csml.stats.ox.ac.uk/people/teh). For my work on safe decision-making under uncertainty, I received the 2021 [Qualcomm Innovation Fellowship](https://www.qualcomm.com/news/releases/2021/07/26/qualcomm-innovation-fellowship-europe-rewards-excellent-young-researchers). I care deeply about equitable access to education and was an [Equality, Diversity & Inclusion Fellow](https://www.mpls.ox.ac.uk/equality-and-diversity/mpls-ed-i-fellows) at the University of Oxford.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am also an [AI Fellow](https://cset.georgetown.edu) at Georgetown's Center for Security and Emerging Technology and a [Rhodes Scholar](https://www.rhodeshouse.ox.ac.uk/).
+
+**Mentoring:** I was the first in my family to attend college. If you identify as a first-generation low-income student and are looking for mentorship, please feel free to get in touch using [this form](https://forms.gle/DbHU2m5Ws7iVEjKi9).
+
+**I am on the academic job market this year (2023-24).** Please feel free to reach out if you think I would be a good fit for your department.

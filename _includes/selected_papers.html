@@ -1,4 +1,21 @@
 
           <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* %}
+            For a complete list, please see: [<a href="publications" target="_blank">Publications</a>] or [<a href="https://scholar.google.de/citations?hl=en&user=MbBntPgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>]
+            
+            <br><br><br>
+            <h4>Informative Priors for Neural Networks</h4>
+            {% bibliography --group_by placeholder -f {{ site.scholar.bibliography }} -q @*[selected=true,area=Informative Priors for Neural Networks]* %}
+            
+            <br>
+            <smaller_margin><h4>Function-Space Inference</h4></smaller_margin>
+            {% bibliography --group_by placeholder -f {{ site.scholar.bibliography }} -q @*[selected=true,area=Function-Space Inference]* %}
+
+            <br>
+            <h4>Reliable Machine Learning</h4>
+            {% bibliography --group_by placeholder -f {{ site.scholar.bibliography }} -q @*[selected=true,area=Reliable Machine Learning]* %}
+
+            <br>
+            <h4>Sequential Decision-Making</h4>
+            {% bibliography --group_by placeholder -f {{ site.scholar.bibliography }} -q @*[selected=true,area=Sequential Decision-Making]* %}
+
           </div>

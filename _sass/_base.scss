@@ -231,7 +231,7 @@ blockquote {
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 1.7rem;
+    font-size: 0.9rem;
 
     a {
       i::before {
@@ -580,15 +580,45 @@ footer.sticky-bottom {
     list-style: none;
     padding: 0;
     margin-top: 0;
+    margin-bottom: 3rem;
+    // margin-right: -15rem;
+    margin-right: 0rem; // default
+
+    // .row {
+    //   display: flex;
+    //   width: 100%; // Full width
+    // }
 
     li {
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
+      width: 770px;
+      min-width: 100%;
+      max-width: 110%;
+      margin-top: -3rem;
+      margin-bottom: -3rem;
+
+      .row {
+        width: 800px;
+        min-width: 100%;
+        max-width: 100%;
+      }
+  
+      .col-sm-8 {
+        width: 800px;
+        min-width: 100%;
+        max-width: 100%;
+      }
 
       .preview {
-        width: 100%;
-        min-width: 80px;
-        max-width: 200px;
+        // width: 100%;
+        // min-width: 0px;
+        max-width: 0px;
       }
+      // .preview {  // default
+      //   width: 100%;
+      //   min-width: 80px;
+      //   max-width: 200px;
+      // }
 
       .abbr {
         height: 2rem;
@@ -617,9 +647,16 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+        width: 770px;
+        min-width: 100%;
+        max-width: 100%;
       }
 
       .author {
+        width: 770px;
+        min-width: 100%;
+        max-width: 100%;
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -646,7 +683,17 @@ footer.sticky-bottom {
         }
       }
 
+      .periodical {
+        width: 770px;
+        min-width: 100%;
+        max-width: 100%;
+      }
+
       .links {
+        width: 770px;
+        min-width: 100%;
+        max-width: 100%;  
+      
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
@@ -712,6 +759,9 @@ footer.sticky-bottom {
 
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
+        margin-top: -1.5rem;
+        margin-bottom: 1rem;
+
       }
 
       div.abstract.hidden.open {
