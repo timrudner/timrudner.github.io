@@ -27,7 +27,8 @@ policy_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-The goal of my research is to develop methods and theoretical insights that enable the **safe deployment of machine learning systems** in safety-critical settings by drawing on tools from **probabilistic machine learning**. &nbsp; I am particularly interested in reliable uncertainty quantification in deep learning, robustness to distribution shifts, AI-assisted clinical decision-making and drug discovery, and AI safety.
+The goal of my research is to develop methods and theoretical insights that enable the **safe deployment of machine learning systems** in safety-critical settings by drawing on tools from **probabilistic machine learning**. <nobr>I am</nobr>
+ particularly interested in reliable uncertainty quantification in deep learning, robustness to distribution shifts, AI-assisted clinical decision-making and drug discovery, and AI safety.
 
 **Bio:** I am a Data Science Assistant Professor, Faculty Fellow, and Instructor at New York University. Before joining New York University, I conducted PhD research on probabilistic machine learning in the Department of Computer Science at the University of Oxford, where I was advised by [Yarin Gal](https://www.cs.ox.ac.uk/people/yarin.gal) and [Yee Whye Teh](http://csml.stats.ox.ac.uk/people/teh). For my work on safe decision-making under uncertainty, I received the 2021 [Qualcomm Innovation Fellowship](https://www.qualcomm.com/news/releases/2021/07/26/qualcomm-innovation-fellowship-europe-rewards-excellent-young-researchers). I care deeply about equitable access to education and was an [Equality, Diversity & Inclusion Fellow](https://www.mpls.ox.ac.uk/equality-and-diversity/mpls-ed-i-fellows) at the University of Oxford.
 
