@@ -10,8 +10,8 @@
     booktitle_show = {Advances in Neural Information Processing Systems},
     booktitle_abbr = {NeurIPS},
     year = {2023},
-    url = {https://neurips.cc/virtual/2023/poster/72607},
-    pdf = {https://neurips.cc/virtual/2023/poster/72607},
+    url = {https://openreview.net/pdf?id=9EndFTDiqh},
+    pdf = {https://openreview.net/pdf?id=9EndFTDiqh},
     bibtex_show = {true},
     abstract = {Standard regularized training procedures correspond to maximizing a posterior distribution over parameters, known as maximum a posteriori (MAP) estimation. However, model parameters are of interest only insomuch as they combine with the functional form of a model to provide a function that can make good predictions. Moreover, the most likely parameters under the parameter posterior do not generally correspond to the most likely function induced by the parameter posterior. In fact, we can re-parametrize a model such that any setting of parameters can maximize the parameter posterior. As an alternative, we investigate the benefits and drawbacks of directly estimating the most likely function implied by the model and the data. We show that this procedure leads to pathological solutions when using neural networks and prove conditions under which the procedure is well-behaved, as well as a scalable approximation. Under these conditions, we find that function-space MAP estimation can lead to flatter minima, better generalization, and improved robustness to overfitting.},
     talk = {https://neurips.cc/virtual/2023/poster/72607},
@@ -29,29 +29,12 @@
     booktitle_show = {Advances in Neural Information Processing Systems},
     booktitle_abbr = {NeurIPS},
     year = {2023},
-    url = {https://neurips.cc/virtual/2023/poster/72331},
-    pdf = {https://neurips.cc/virtual/2023/poster/72331},
+    url = {https://openreview.net/pdf?id=ECvtxmVP0x},
+    pdf = {https://openreview.net/pdf?id=ECvtxmVP0x},
     bibtex_show = {true},
     abstract = {Vision-language pretrained models have seen remarkable success, but their application to safety-critical settings is limited by their lack of interpretability. To improve the interpretability of vision-language models such as CLIP, we propose a multi-modal information bottleneck (M2IB) approach that learns latent representations that compress irrelevant information while preserving relevant visual and textual features. We demonstrate how M2IB can be applied to attribution analysis of vision-language pretrained models, increasing attribution accuracy and improving the interpretability of such models when applied to safety-critical domains such as healthcare. Crucially, unlike commonly used unimodal attribution methods, M2IB does not require ground truth labels, making it possible to audit representations of vision-language pretrained models when multiple modalities but no ground truth data is available. Using CLIP as an example, we demonstrate the effectiveness of M2IB attribution and show that it outperforms gradient-based, perturbation-based, and attention-based attribution methods both qualitatively and quantitatively.},
     preview = {wang2023m2ib.png},
     talk = {https://neurips.cc/virtual/2023/poster/72331},
-}
-
-@inproceedings{
-    shwartz2023vicreg,
-    title = {An Information-Theoretic Perspective on Variance-Invariance-Covariance Regularization},
-    author = {Ravid Shwartz-Ziv and Randall Balestriero and Kenji Kawaguchi and Tim G. J. Rudner and Yann LeCun},
-    author_show = {Ravid Shwartz-Ziv and Randall Balestriero and Kenji Kawaguchi and Tim G. J. Rudner and Yann LeCun},
-    booktitle = {Advances in Neural Information Processing Systems 36},
-    booktitle_show = {Advances in Neural Information Processing Systems},
-    booktitle_abbr = {NeurIPS},
-    year = {2023},
-    url = {https://neurips.cc/virtual/2023/poster/71992},
-    pdf = {https://neurips.cc/virtual/2023/poster/71992},
-    bibtex_show = {true},
-    abstract = {Variance-Invariance-Covariance Regularization (VICReg) is a self-supervised learning (SSL) method that has shown promising results on a variety of tasks. However, the fundamental mechanisms underlying VICReg remain unexplored. In this paper, we present an information-theoretic perspective on the VICReg objective. We begin by deriving information-theoretic quantities for deterministic networks as an alternative to unrealistic stochastic network assumptions. We then relate the optimization of the VICReg objective to mutual information optimization, highlighting underlying assumptions and facilitating a constructive comparison with other SSL algorithms and derive a generalization bound for VICReg, revealing its inherent advantages for downstream tasks. Building on these results, we introduce a family of SSL methods derived from information-theoretic principles that outperform existing SSL techniques.},
-    preview = {shwartz2023vicreg.png},
-    talk = {https://neurips.cc/virtual/2023/poster/71992},
 }
 
 @inproceedings{
@@ -63,13 +46,49 @@
     booktitle_show = {Advances in Neural Information Processing Systems},
     booktitle_abbr = {NeurIPS},
     year = {2023},
-    url = {https://arxiv.org/abs/2305.20009},
-    pdf = {https://arxiv.org/abs/2305.20009},
+    url = {https://openreview.net/pdf?id=MfiK69Ga6p},
+    pdf = {https://openreview.net/pdf?id=MfiK69Ga6p},
     bibtex_show = {true},
     abstract = {A popular approach to protein design is to combine a generative model with a discriminative model for conditional sampling. The generative model samples plausible sequences while the discriminative model guides a search for sequences with high fitness. Given its broad success in conditional sampling, classifier-guided diffusion modeling is a promising foundation for protein design, leading many to develop guided diffusion models for structure with inverse folding to recover sequences. In this work, we propose diffusioN Optimized Sampling (NOS), a guidance method for discrete diffusion models that follows gradients in the hidden states of the denoising network. NOS makes it possible to perform design directly in sequence space, circumventing significant limitations of structure-based methods, including scarce data and challenging inverse design. Moreover, we use NOS to generalize LaMBO, a Bayesian optimization procedure for sequence design that facilitates multiple objectives and edit-based constraints. The resulting method, LaMBO-2, enables discrete diffusions and stronger performance with limited edits through a novel application of saliency maps. We apply LaMBO-2 to a real-world protein design task, optimizing antibodies for higher expression yield and binding affinity to several therapeutic targets under locality and developability constraints, attaining a 99% expression rate and 40% binding rate in exploratory in vitro experiments.},
     preview = {gruver2023nos.png},
     code = {https://github.com/ngruver/NOS},
     talk = {https://neurips.cc/virtual/2023/poster/71899},
+    selected = {true},
+    placeholder = {},
+    area = {Clinical Decision-Making and Drug Discovery},
+}
+
+@inproceedings{
+    shwartz2023vicreg,
+    title = {An Information-Theoretic Perspective on Variance-Invariance-Covariance Regularization},
+    author = {Ravid Shwartz-Ziv and Randall Balestriero and Kenji Kawaguchi and Tim G. J. Rudner and Yann LeCun},
+    author_show = {Ravid Shwartz-Ziv and Randall Balestriero and Kenji Kawaguchi and Tim G. J. Rudner and Yann LeCun},
+    booktitle = {Advances in Neural Information Processing Systems 36},
+    booktitle_show = {Advances in Neural Information Processing Systems},
+    booktitle_abbr = {NeurIPS},
+    year = {2023},
+    url = {https://openreview.net/pdf?id=KipjqOPaZ0},
+    pdf = {https://openreview.net/pdf?id=KipjqOPaZ0},
+    bibtex_show = {true},
+    abstract = {Variance-Invariance-Covariance Regularization (VICReg) is a self-supervised learning (SSL) method that has shown promising results on a variety of tasks. However, the fundamental mechanisms underlying VICReg remain unexplored. In this paper, we present an information-theoretic perspective on the VICReg objective. We begin by deriving information-theoretic quantities for deterministic networks as an alternative to unrealistic stochastic network assumptions. We then relate the optimization of the VICReg objective to mutual information optimization, highlighting underlying assumptions and facilitating a constructive comparison with other SSL algorithms and derive a generalization bound for VICReg, revealing its inherent advantages for downstream tasks. Building on these results, we introduce a family of SSL methods derived from information-theoretic principles that outperform existing SSL techniques.},
+    preview = {shwartz2023vicreg.png},
+    talk = {https://neurips.cc/virtual/2023/poster/71992},
+}
+
+@inproceedings{
+    lechuga2023m2d2,
+    title = {Informative Priors Improve the Reliability of Phenotype Prediction from Multimodal Healthcare Data},
+    author = {Julian Lechuga Lopez and Tim G. J. Rudner and Farah Shamout},
+    author_show = {Julian Lechuga Lopez and Tim G. J. Rudner and Farah Shamout},
+    booktitle = {Machine Learning for Health Symposium Findings (Forthcoming)},
+    booktitle_show = {Machine Learning for Health Symposium Findings (Forthcoming)},
+    booktitle_abbr = {ML4H},
+    year = {2023},
+    bibtex_show = {true},
+    abstract = {Machine learning-aided clinical decision support has the potential to significantly improve patient care.  However, existing efforts in this domain for principled quantification of uncertainty have largely been limited to applications of ad-hoc solutions that do not consistently improve reliability. In this work, we consider stochastic neural networks and design a tailor-made multimodal data-driven (M2D2) prior distribution over network parameters. We use simple and scalable Gaussian mean-field variational inference to train a Bayesian neural network using the M2D2 prior. We train and evaluate the proposed approach using clinical time-series data in MIMIC-IV and corresponding chest X-ray images in MIMIC-CXR for phenotype classification. Our empirical results show that the proposed method produces a more reliable predictive model compared to deterministic and Bayesian neural network baselines.},
+    selected = {true},
+    placeholder = {},
+    area = {Clinical Decision-Making and Drug Discovery},
 }
 
 @inproceedings{
@@ -83,8 +102,8 @@
     year = {2023},
     series = {Proceedings of Machine Learning Research},
     publisher = {PMLR},
-    url = {https://proceedings.mlr.press/v202/rudner23a.html},
-    pdf = {https://proceedings.mlr.press/v202/rudner23a.html},
+    url = {https://github.com/timrudner/fseb},
+    pdf = {https://github.com/timrudner/fseb},
     bibtex_show = {true},
     abstract = {Parameter-space regularization in neural network optimization is a fundamental tool for improving generalization. However, standard parameter-space regularization methods make it challenging to encode explicit preferences about desired predictive functions into neural network training. In this work, we approach regularization in neural networks from a probabilistic perspective and show that by viewing parameter-space regularization as specifying an empirical prior distribution over the model parameters, we can derive a probabilistically well-motivated regularization technique that allows explicitly encoding information about desired predictive functions into neural network training. This method—which we refer to as function-space empirical Bayes (FS-EB)—includes both parameter- and function-space regularization, is mathematically simple, easy to implement, and incurs only minimal computational overhead compared to standard regularization techniques. We evaluate the utility of this regularization technique empirically and demonstrate that the proposed method leads to near-perfect semantic shift detection, highly-calibrated predictive uncertainty estimates, successful task adaption from pre-trained models, and improved generalization under covariate shift},
     preview = {rudner2023fseb.png},
@@ -117,7 +136,7 @@
     talk = {https://icml.cc/virtual/2023/spotlight/25037},
     selected = {true},
     placeholder = {},
-    area = {Robustness to Distribution Shifts},
+    area = {Clinical Decision-Making and Drug Discovery},
 }
 
 @inproceedings{
@@ -299,7 +318,6 @@
     website = {https://sites.google.com/view/nppac},
     selected = {true},
     placeholder = {},
-    area = {Probabilistic Sequential Decision-Making},
 }
 
 @inproceedings{
