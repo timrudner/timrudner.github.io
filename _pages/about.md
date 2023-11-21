@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Tim G. J. Rudner
 permalink: /
 subtitle: >
   <b>Data Science Assistant Professor, Faculty Fellow, and Instructor</b>, <a href='https://cds.nyu.edu/'>Center for Data Science</a>, New York University<br>
@@ -27,8 +27,15 @@ policy_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-The goal of my research is to develop methods and theoretical insights that enable the **safe deployment of machine learning systems** in safety-critical settings by drawing on tools from **probabilistic machine learning**. <nobr>I am</nobr>
- particularly interested in reliable uncertainty quantification in deep learning [[1](https://openreview.net/pdf?id=9EndFTDiqh),[2](https://timrudner.com/fseb/Rudner2023_Function-Space_Regularization_in_Neural_Networks-_A_Probabilistic_Perspective.pdf),[3](https://openreview.net/pdf?id=OQs0pLKGGpS)], robustness to distribution shifts [[1](https://arxiv.org/pdf/2207.07411.pdf),[2](https://arxiv.org/pdf/2211.12717.pdf)], AI-assisted clinical decision-making and drug discovery [[1](https://proceedings.mlr.press/v202/klarner23a/klarner23a.pdf),[2](https://openreview.net/pdf?id=MfiK69Ga6p)], sequential decision-making [[1](https://arxiv.org/pdf/2104.10190.pdf),[2](https://proceedings.mlr.press/v162/rudner22a/rudner22a.pdf)], and AI safety.
+The goal of my research is to create **responsible** and **trustworthy AI** with <nobr>a focus</nobr> on developing methods and theoretical insights that improve the **reliability**, **transparency**, and **fairness** of machine learning systems deployed in safety-critical settings.
+I am particularly interested in improving reliable uncertainty quantification in deep learning [[1](https://timrudner.com/fseb/Rudner2023_Function-Space_Regularization_in_Neural_Networks-_A_Probabilistic_Perspective.pdf),[2](https://openreview.net/pdf?id=OQs0pLKGGpS)], robustness to distribution shifts [[1](https://arxiv.org/pdf/2207.07411.pdf),[2](https://arxiv.org/pdf/2211.12717.pdf)], interpretability [[1](https://openreview.net/pdf?id=ECvtxmVP0x),[2](https://openreview.net/pdf?id=9EndFTDiqh)], sequential decision-making [[1](https://arxiv.org/pdf/2104.10190.pdf),[2](https://proceedings.mlr.press/v162/rudner22a/rudner22a.pdf)], and AI-assisted clinical decision-making and drug discovery [[1](https://proceedings.mlr.press/v202/klarner23a/klarner23a.pdf),[2](https://openreview.net/pdf?id=MfiK69Ga6p)].
+
+<!-- The goal of my research is to develop methods and theoretical insights that enable the **safe deployment of machine learning systems** in safety-critical settings by drawing on tools from **probabilistic machine learning**. <nobr>I am</nobr>
+ particularly interested in
+ - reliable uncertainty quantification in deep learning [[1](https://openreview.net/pdf?id=9EndFTDiqh),[2](https://timrudner.com/fseb/Rudner2023_Function-Space_Regularization_in_Neural_Networks-_A_Probabilistic_Perspective.pdf),[3](https://openreview.net/pdf?id=OQs0pLKGGpS)]
+ - robustness to distribution shifts [[1](https://arxiv.org/pdf/2207.07411.pdf),[2](https://arxiv.org/pdf/2211.12717.pdf)]
+ - AI-assisted clinical decision-making and drug discovery [[1](https://proceedings.mlr.press/v202/klarner23a/klarner23a.pdf),[2](https://openreview.net/pdf?id=MfiK69Ga6p)]
+ - sequential decision-making [[1](https://arxiv.org/pdf/2104.10190.pdf),[2](https://proceedings.mlr.press/v162/rudner22a/rudner22a.pdf)] -->
 
 **Bio:** I am a Data Science Assistant Professor, Faculty Fellow, and Instructor at New York University. Before joining New York University, I conducted PhD research on probabilistic machine learning in the Department of Computer Science at the University of Oxford, where I was advised by [<nobr>Yarin Gal</nobr>](https://www.cs.ox.ac.uk/people/yarin.gal) and [Yee Whye Teh](http://csml.stats.ox.ac.uk/people/teh). For my work on safe decision-making under uncertainty, I received the 2021 [Qualcomm Innovation Fellowship](https://www.qualcomm.com/news/releases/2021/07/26/qualcomm-innovation-fellowship-europe-rewards-excellent-young-researchers). I care deeply about equitable access to education and was an [Equality, Diversity & Inclusion Fellow](https://www.mpls.ox.ac.uk/equality-and-diversity/mpls-ed-i-fellows) at the University of Oxford.
 
