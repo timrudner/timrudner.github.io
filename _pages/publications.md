@@ -11,4 +11,10 @@ nav_order: 1
 
 {% bibliography -f {{ site.scholar.bibliography }} %}
 
+<br>
+<br>
+<h2>Policy Reports & Issue Briefs</h2>
+
+{% bibliography -f {{ site.scholar_policy.bibliography }} %}
+
 </div>
