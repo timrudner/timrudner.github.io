@@ -1,6 +1,39 @@
 ---
 ---
 
+
+@inproceedings{
+    rudner2023gap,
+    title = {Mind the GAP: Improving Robustness to Subpopulation Shifts with Group-Aware Priors},
+    author = {Tim G. J. Rudner and Ya Shi Zhang and Andrew Gordon Wilson and Julia Kempe},
+    author_show = {Tim G. J. Rudner and Ya Shi Zhang and Andrew Gordon Wilson and Julia Kempe},
+    booktitle = {Preprint},
+    booktitle_show = {Preprint},
+    year = {2023},
+    pdf = {https://timrudner.com/gap},
+    bibtex_show = {true},
+    abstract = {Machine learning models often perform poorly under subpopulation shifts in the data distribution. Developing methods that allow machine learning models to better generalize to such shifts is crucial for safe deployment in real-world settings. In this paper, we develop a family of group-aware prior (GAP) distributions over neural network parameters that explicitly favor models that generalize well under subpopulation shifts. We design a simple group-aware prior that only requires access to a small set of data with group information and demonstrate that training with this prior yields state-of-the-art performance---even when only retraining the final layer of a previously trained non-robust model. Group aware-priors are conceptually simple, complementary to existing approaches, such as attribute pseudo labeling and data reweighting, and open up promising new avenues for harnessing Bayesian inference to enable robustness to subpopulation shifts.},
+    selected = {true},
+    placeholder = {},
+    area = {Robustness to Distribution Shifts},
+}
+
+@inproceedings{
+    rudner2023uap,
+    title = {Uncertainty-Aware Priors for Finetuning Pretrained Models},
+    author = {Tim G. J. Rudner and Xiang Pan and Yucen Lilu Li and Ravid Shwartz-Ziv and Andrew Gordon Wilson},
+    author_show = {Tim G. J. Rudner and Xiang Pan and Yucen Lilu Li and Ravid Shwartz-Ziv and Andrew Gordon Wilson},
+    booktitle = {Preprint},
+    booktitle_show = {Preprint},
+    year = {2023},
+    pdf = {https://timrudner.com/uap},
+    bibtex_show = {true},
+    abstract = {Finetuning off-the-shelf pretrained neural networks has become the default starting point for a wide range of challenging prediction tasks---especially in computer vision and natural language processing, where pretrained models trained on millions or even billions of data points are publicly available and can be finetuned with a moderate compute budget. However, while finetuned models have been shown to significantly improve predictive performance in several respects compared to models trained from scratch, they can exhibit poor calibration and fail to reliably identify challenging distribution shifts. In this paper, we improve uncertainty quantification in finetuned models by deriving an uncertainty-aware finetuning prior. This prior assigns high probability density to parameters that induce predictive functions with high uncertainty on data points that are meaningfully different from the data used for finetuning. We evaluate models trained with this prior on different transfer learning tasks and show that finetuning with uncertainty-aware priors significantly improves calibration, selective prediction, and semantic shift detection on computer vision and natural language classification tasks.},
+    selected = {true},
+    placeholder = {},
+    area = {Reliable Uncertainty Quantification},
+}
+
 @inproceedings{
     rudner2023fsmap,
     title = {Should We Learn Most Likely Functions or Parameters?},
@@ -83,9 +116,10 @@
     title = {Informative Priors Improve the Reliability of Multimodal Clinical Data Classification},
     author = {Julian Lechuga Lopez and Tim G. J. Rudner and Farah Shamout},
     author_show = {Julian Lechuga Lopez and Tim G. J. Rudner and Farah Shamout},
-    booktitle = {Machine Learning for Health Symposium Findings (Forthcoming)},
-    booktitle_show = {Machine Learning for Health Symposium Findings (Forthcoming)},
+    booktitle = {Machine Learning for Health Symposium Findings},
+    booktitle_show = {Machine Learning for Health Symposium Findings},
     booktitle_abbr = {ML4H},
+    pdf = {https://timrudner.com/m2d2},
     year = {2023},
     bibtex_show = {true},
     abstract = {Machine learning-aided clinical decision support has the potential to significantly improve patient care.  However, existing efforts in this domain for principled quantification of uncertainty have largely been limited to applications of ad-hoc solutions that do not consistently improve reliability. In this work, we consider stochastic neural networks and design a tailor-made multimodal data-driven (M2D2) prior distribution over network parameters. We use simple and scalable Gaussian mean-field variational inference to train a Bayesian neural network using the M2D2 prior. We train and evaluate the proposed approach using clinical time-series data in MIMIC-IV and corresponding chest X-ray images in MIMIC-CXR for the classification of acute care conditions. Our empirical results show that the proposed method produces a more reliable predictive model compared to deterministic and Bayesian neural network baselines.},
@@ -105,7 +139,6 @@
     year = {2023},
     series = {Proceedings of Machine Learning Research},
     publisher = {PMLR},
-    url = {https://timrudner.com/fseb},
     pdf = {https://timrudner.com/fseb},
     bibtex_show = {true},
     abstract = {Parameter-space regularization in neural network optimization is a fundamental tool for improving generalization. However, standard parameter-space regularization methods make it challenging to encode explicit preferences about desired predictive functions into neural network training. In this work, we approach regularization in neural networks from a probabilistic perspective and show that by viewing parameter-space regularization as specifying an empirical prior distribution over the model parameters, we can derive a probabilistically well-motivated regularization technique that allows explicitly encoding information about desired predictive functions into neural network training. This method—which we refer to as function-space empirical Bayes (FS-EB)—includes both parameter- and function-space regularization, is mathematically simple, easy to implement, and incurs only minimal computational overhead compared to standard regularization techniques. We evaluate the utility of this regularization technique empirically and demonstrate that the proposed method leads to near-perfect semantic shift detection, highly-calibrated predictive uncertainty estimates, successful task adaption from pre-trained models, and improved generalization under covariate shift},
