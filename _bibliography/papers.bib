@@ -129,6 +129,20 @@
 }
 
 @inproceedings{
+    lotfi2023pacllm,
+    title = {Non-Vacuous Generalization Bounds for Large Language Models},
+    author = {Sanae Lotfi and Marc Finzi and Yilun Kuang and Tim G. J. Rudner and Micah Goldblum and Andrew Gordon Wilson},
+    author_show = {Sanae Lotfi and Marc Finzi and Yilun Kuang and Tim G. J. Rudner and Micah Goldblum and Andrew Gordon Wilson},
+    booktitle = {NeurIPS 2023 Workshop on Mathematics of Modern Machine Learning},
+    booktitle_show = {NeurIPS 2023 Workshop on Mathematics of Modern Machine Learning},
+    year = {2023},
+    pdf = {https://openreview.net/forum?id=7QRaAfbium},
+    bibtex_show = {true},
+    abstract = {Modern language models can contain billions of parameters, raising the question of whether they can generalize beyond the training data or simply regurgitate their training corpora. We provide the first non-vacuous generalization bounds for pretrained large language models (LLMs), indicating that language models are capable of discovering regularities that generalize to unseen data. In particular, we derive a compression bound that is valid for the unbounded log-likelihood loss, and we extend the bound to handle subsampling, accelerating bound computation on massive datasets. To achieve the extreme level of compression required for non-vacuous generalization bounds, we devise SubLoRA, a low-dimensional non-linear parameterization. Using this approach, we find that larger models have better generalization bounds and are more compressible than smaller models.},
+    placeholder = {},
+}
+
+@inproceedings{
     rudner2023fseb,
     title={{F}unction-{S}pace {R}egularization in {N}eural {N}etworks: {A} {P}robabilistic {P}erspective},
     author={Tim G. J. Rudner and Sanyam Kapoor and Shikai Qiu and Andrew Gordon Wilson},
@@ -269,6 +283,21 @@
     selected = {true},
     placeholder = {},
     area = {Reliable Uncertainty Quantification},
+}
+
+@inproceedings{
+    chen2022ntk,
+    title = {A Neural Tangent Kernel Perspective on Function-Space Regularization in Neural Networks},
+    author = {Zonghao Chen and Xupeng Shi and Tim G. J. Rudner and Qixuan Feng and Weizhong Zhang and Tong Zhang},
+    author_show = {Zonghao Chen and Xupeng Shi and Tim G. J. Rudner and Qixuan Feng and Weizhong Zhang and Tong Zhang},
+    booktitle = {NeurIPS 2022 Workshop on Optimization for Machine Learning},
+    booktitle_show = {NeurIPS 2023 Workshop on Optimization for Machine Learning},
+    year = {2022},
+    url = {https://openreview.net/pdf?id=E6MGIXQlKw},
+    pdf = {https://openreview.net/pdf?id=E6MGIXQlKw},
+    bibtex_show = {true},
+    abstract = {Regularization can help reduce the gap between training and test error by systematically limiting model complexity. Popular regularization techniques such as L2 weight regularization act directly on the network parameters but do not explicitly take into account how the interplay between the parameters and the network architecture may affect the induced predictive functions. To address this shortcoming, we propose a simple technique for effective function-space regularization. Drawing on the result that fully-trained wide multi-layer perceptrons are equivalent to kernel regression under the Neural Tangent Kernel (NTK), we propose to approximate the norm of neural network functions by the reproducing kernel Hilbert space norm under the NTK  and use it as a function-space regularizer. We prove that neural networks trained using this regularizer are arbitrarily close to kernel ridge regression solutions under the NTK. Furthermore, we provide a generalization error bound under the proposed regularizer and empirically demonstrate improved generalization and state-of-the-art performance on downstream tasks where effective regularization on the induced space of functions is essential.},
+    placeholder = {},
 }
 
 @inproceedings{
@@ -460,6 +489,7 @@
     booktitle = {NeurIPS 2019 Workshop on Bayesian Deep Learning},
     booktitle_show = {NeurIPS 2019 Workshop on Bayesian Deep Learning},
     year = {2019},
+    bibtex_show = {true},
     url = {Rudner2019_The_Natural_Neural_Tangent_Kernel-_Neural_Network_Training_Dynamics_under_Natural_Gradient_Descent.pdf},
     pdf = {Rudner2019_The_Natural_Neural_Tangent_Kernel-_Neural_Network_Training_Dynamics_under_Natural_Gradient_Descent.pdf},
     preview = {rudner2019naturalntk.png},
@@ -512,19 +542,5 @@
     abstract = {In the last few years, deep multi-agent reinforcement learning (RL) has become a highly active area of research. A particularly challenging class of problems in this area is partially observable, cooperative, multi-agent learning, in which teams of agents must learn to coordinate their behaviour while conditioning only on their private observations. This is an attractive research area since such problems are relevant to a large number of real-world systems and are also more amenable to evaluation than general-sum problems. Standardised environments such as the ALE and MuJoCo have allowed single-agent RL to move beyond toy domains, such as grid worlds. However, there is no comparable benchmark for cooperative multi-agent RL. As a result, most papers in this field use one-off toy problems, making it difficult to measure real progress. In this paper, we propose the StarCraft Multi-Agent Challenge (SMAC) as a benchmark problem to fill this gap. SMAC is based on the popular real-time strategy game StarCraft II and focuses on micromanagement challenges where each unit is controlled by an independent agent that must act based on local observations. We offer a diverse set of challenge maps and recommendations for best practices in benchmarking and evaluations. We also open-source a deep multi-agent RL learning framework including state-of-the-art algorithms. We believe that SMAC can provide a standard benchmark environment for years to come. Videos of our best agents for several SMAC scenarios are available at: this https URL.},
     preview = {samvelyan19smac.png},
     code = {https://github.com/oxwhirl/smac},
-}
-
-@inproceedings{
-    rudner2018npsasgps,
-    author = {Tim G. J. Rudner and Vincent Fortuin and Yee Whye Teh and Yarin Gal},
-    author_show = {Tim G. J. Rudner and Vincent Fortuin and Yee Whye Teh and Yarin Gal},
-    title = {{O}n the {C}onnection between {N}eural {P}rocesses and {G}aussian {P}rocesses with {D}eep {K}ernels},
-    booktitle = {NeurIPS 2018 Workshop on Bayesian Deep Learning},
-    booktitle_show = {NeurIPS 2018 Workshop on Bayesian Deep Learning},
-    year = {2018},
-    url = {http://bayesiandeeplearning.org/2018/papers/128.pdf},
-    pdf = {http://bayesiandeeplearning.org/2018/papers/128.pdf},
-    bibtex_show = {true},
-    preview = {rudner2018npsasgps.png},
 }
 
