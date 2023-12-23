@@ -1,14 +1,15 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 
 nav: false
 nav_order: 2
 display_categories: [work, fun]
 horizontal: false
 ---
 
+{% comment %}
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
@@ -56,3 +57,4 @@ horizontal: false
   {%- endif -%}
 {%- endif -%}
 </div>
+{% endcomment %}
