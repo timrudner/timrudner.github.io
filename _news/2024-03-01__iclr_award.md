@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on **<a href="https://timrudner.com/scr" target="_blank">language-guided control</a>** won an **outstanding paper award** at the <a href="https://sites.google.com/view/genai4dm-iclr2024" target="_blank">GenAI4DM Workshop</a>.
+Our work on **<a href="https://timrudner.com/scr" target="_blank">language-guided control</a>** won an **outstanding paper award** at the <a href="https://sites.google.com/view/genai4dm-iclr2024" target="_blank">GenAI4DM Workshop</a>!
