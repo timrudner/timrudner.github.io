@@ -41,6 +41,6 @@ In pursuit of this goal, my research uses probabilistic methods to improve relia
 
 I am also an <a href="https://cset.georgetown.edu" target="_blank">AI Fellow</a> at Georgetown's Center for Security & Emerging Technology and a <a href="https://www.rhodeshouse.ox.ac.uk" target="_blank">Rhodes Scholar</a>.
 
-**Mentoring:** I was the first in my family to attend college, and I know that navigating higher education can be challenging for first-generation low-income students. If you identify as a first-generation low-income student and are looking for mentorship, please feel free to get in touch using <a href="https://forms.gle/DbHU2m5Ws7iVEjKi9" target="_blank">this form</a>.
+**Mentoring:** I was the first in my family to attend college, and I know that navigating higher education can be challenging for first-generation low-income students. If you identify as a first-generation low-income student and are looking for mentorship, please feel free to get in touch using <a href="https://forms.gle/7H1cMzwhjYB52XoZ9" target="_blank">this form</a>.
 
 **I am on the academic job market this year (2023-24).** Please feel free to reach out if you think I would be a good fit for your department. **<u><a href="https://timrudner.com/cv" target="_blank">You can find my CV here</a></u>**.
