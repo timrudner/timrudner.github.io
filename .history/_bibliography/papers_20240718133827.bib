@@ -14,7 +14,6 @@
     pdf = {https://timrudner.com/cgd},
     bibtex_show = {true},
     abstract = {Generative models have the potential to accelerate key steps in the discovery of novel molecular therapeutics and materials. Diffusion models have recently emerged as a powerful approach, excelling at unconditional sample generation and, with data-driven guidance, conditional generation within their training distribution. Reliably sampling from optimal regions beyond the training data, however, remains an open challenge---with current methods predominantly focusing on modifying the diffusion process itself. Here, we explore a different approach and present a simple plug-and-play regularization framework that leverages unlabeled data and smoothness constraints to improve the out-of-distribution generalization of guided diffusion models. Our method is probabilistically motivated and leads to substantial performance gains across various settings, including continuous, discrete, and graph-structured diffusion processes. We demonstrate significant improvements in performance for applications in chemistry, materials science, and protein design.},
-    code = {https://github.com/leojklarner/context-guided-diffusion},
     selected = {true},
     placeholder = {},
     area = {Clinical Decision-Making and Drug Discovery},
@@ -33,7 +32,6 @@
     pdf = {https://timrudner.com/pacllm},
     bibtex_show = {true},
     abstract = {Modern language models can contain billions of parameters, raising the question of whether they can generalize beyond the training data or simply regurgitate their training corpora. We provide the first non-vacuous generalization bounds for pretrained large language models (LLMs), indicating that language models are capable of discovering regularities that generalize to unseen data. In particular, we derive a compression bound that is valid for the unbounded log-likelihood loss, and we extend the bound to handle subsampling, accelerating bound computation on massive datasets. To achieve the extreme level of compression required for non-vacuous generalization bounds, we devise SubLoRA, a low-dimensional non-linear parameterization. Using this approach, we find that larger models have better generalization bounds and are more compressible than smaller models.},
-    code = {https://github.com/Sanaelotfi/SubLoRA-bounds-for-LLMs},
     placeholder = {},
 }
 
@@ -63,7 +61,6 @@
     pdf = {https://timrudner.com/scr},
     bibtex_show = {true},
     abstract = {Vision- and language-guided embodied AI requires a fine-grained understanding of the physical world through language and visual inputs. Such capabilities are difficult to learn solely from task-specific data, which has led to the emergence of pre-trained vision-language models as a tool for transferring representations learned from internet-scale data to downstream tasks and new domains. However, commonly used contrastively trained representations such as in CLIP have been shown to fail at enabling embodied agents to gain sufficiently fine-grained scene understanding---a capability vital for control. To address this shortcoming, we consider representations from pre-trained text-to-image diffusion models, which are explicitly optimized to generate image from text prompts and as such, contain text-conditioned representations that reflect highly fine-grained visuo-spatial information. Using pre-trained text-to-image diffusion models, we construct {\em \ouralgolong} which allow learning downstream control policies that generalize to complex, open-ended environments. We show that policies learned using \ouralgolong are competitive with state-of-the-art approaches on a broad range of simulated control tasks and exhibit high success rates on difficult control tasks that require generalization to unseen objects at test time. Most notably, we show that \ouralgolong enable learning policies that exhibit state-of-the-art performance on OVMM, a difficult open-vocabulary navigation benchmark.},
-    code = {https://github.com/ykarmesh/stable-control-representations},
     selected = {true},
     placeholder = {},
 }
