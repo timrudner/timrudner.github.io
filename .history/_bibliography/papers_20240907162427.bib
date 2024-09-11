@@ -1,18 +1,50 @@
 ---
 ---
 
+
+@inproceedings{
+    probasco2024dss,
+    title = {Not Oracles of the Battlefield: Safety Considerations for AI-Based Military Decision Support Systems},
+    author = {Emilia Probasco and Matthew Burtell and Helen Toner and Tim G. J. Rudner},
+    booktitle = {AAAI Conference on Artificial Intelligence, Ethics, and Society (Forthcoming)},
+    booktitle_show = {AAAI Conference on Artificial Intelligence, Ethics, and Society (Forthcoming)},
+    booktitle_abbr = {AIES},
+    year = {2024},
+    bibtex_show = {true},
+    abstract = {AI-based military decision support systems that help commanders observe, orient, decide, and act on the battlefield are highly sought after by military leadership. With the advent of large language models, AI developers have begun advertising automated AI-based decision support systems designed to both analyze and act on data from the battlefield. While the desire to use decision support systems to make better decisions on the battlefield is unsurprising, the responsible deployment of such systems requires a clear understanding of the capabilities and limitations of modern machine learning models. This paper reviews recently proposed uses of AI-enables decision support systems (DSS), provides a simplified framework for considering AI-DSS capabilities and limitations, and recommends practical risk mitigations commanders might employ when operating with an AI-enabled DSS.},
+}
+
+@inproceedings{
+    feng2024attackingbayes,
+    title = {Attacking Bayes: On the Adversarial Robustness of Bayesian Neural Networks},
+    author = {Yunzhen Feng and Tim G. J. Rudner and Nikolaos Tsilivis and Julia Kempe},
+    cofirstauthors = {1, 2},
+    booktitle = {Transactions on Machine Learning Research},
+    booktitle_show = {Transactions on Machine Learning Research},
+    booktitle_abbr = {TMLR},
+    issn={2835-8856},
+    year={2024},
+    pdf = {https://timrudner.com/attacking-bayes},
+    bibtex_show = {true},
+    abstract = {Adversarial examples have been shown to cause neural networks to fail on a wide range of vision and language tasks, but recent work has claimed that Bayesian neural networks (BNNs) are inherently robust to adversarial perturbations. In this work, we examine this claim. To study the adversarial robustness of BNNs, we investigate whether it is possible to successfully break state-of-the-art BNN inference methods and prediction pipelines using even relatively unsophisticated attacks for three tasks: (1) label prediction under the posterior predictive mean, (2) adversarial example detection with Bayesian predictive uncertainty, and (3) semantic shift detection. We find that BNNs trained with state-of-the-art approximate inference methods, and even BNNs trained with Hamiltonian Monte Carlo, are highly susceptible to adversarial attacks. We also identify various conceptual and experimental errors in previous works that claimed inherent adversarial robustness of BNNs and conclusively demonstrate that BNNs and uncertainty-aware Bayesian prediction pipelines are not inherently robust against adversarial attacks.},
+    code = {https://github.com/timrudner/attacking-bayes},
+   
+}
+
 @inproceedings{
     klarner2024guided,
     title = {Domain-Aware Guidance for Out-of-Distribution Molecular and Protein Design},
-    author = {Leo Klarner and Tim G. J. Rudner and Garrett M. Morris, Charlotte Deane, Yee Whye Teh.},
+    author = {Leo Klarner and Tim G. J. Rudner and Garrett M. Morris and Charlotte Deane and Yee Whye Teh},
     booktitle = {Proceedings of the 41th International Conference on Machine Learning},
     booktitle_show = {International Conference on Machine Learning},
     booktitle_abbr = {ICML},
     year = {2024},
     series = {Proceedings of Machine Learning Research},
     publisher = {PMLR},
+    pdf = {https://timrudner.com/cgd},
     bibtex_show = {true},
     abstract = {Generative models have the potential to accelerate key steps in the discovery of novel molecular therapeutics and materials. Diffusion models have recently emerged as a powerful approach, excelling at unconditional sample generation and, with data-driven guidance, conditional generation within their training distribution. Reliably sampling from optimal regions beyond the training data, however, remains an open challenge---with current methods predominantly focusing on modifying the diffusion process itself. Here, we explore a different approach and present a simple plug-and-play regularization framework that leverages unlabeled data and smoothness constraints to improve the out-of-distribution generalization of guided diffusion models. Our method is probabilistically motivated and leads to substantial performance gains across various settings, including continuous, discrete, and graph-structured diffusion processes. We demonstrate significant improvements in performance for applications in chemistry, materials science, and protein design.},
+    code = {https://github.com/leojklarner/context-guided-diffusion},
     selected = {true},
     placeholder = {},
     area = {Clinical Decision-Making and Drug Discovery},
@@ -31,6 +63,7 @@
     pdf = {https://timrudner.com/pacllm},
     bibtex_show = {true},
     abstract = {Modern language models can contain billions of parameters, raising the question of whether they can generalize beyond the training data or simply regurgitate their training corpora. We provide the first non-vacuous generalization bounds for pretrained large language models (LLMs), indicating that language models are capable of discovering regularities that generalize to unseen data. In particular, we derive a compression bound that is valid for the unbounded log-likelihood loss, and we extend the bound to handle subsampling, accelerating bound computation on massive datasets. To achieve the extreme level of compression required for non-vacuous generalization bounds, we devise SubLoRA, a low-dimensional non-linear parameterization. Using this approach, we find that larger models have better generalization bounds and are more compressible than smaller models.},
+    code = {https://github.com/Sanaelotfi/SubLoRA-bounds-for-LLMs},
     placeholder = {},
 }
 
@@ -51,15 +84,58 @@
 }
 
 @inproceedings{
+    rudner2024uap,
+    title = {Uncertainty-Aware Priors for Fine-Tuning Pre-trained Vision and Language Models},
+    author = {Tim G. J. Rudner and Xiang Pan and Yucen Lily Li and Ravid Shwartz-Ziv and Andrew Gordon Wilson},
+    booktitle = {ICML Workshop on Structured Probabilistic Inference & Generative Modeling},
+    booktitle_show = {ICML Workshop on Structured Probabilistic Inference & Generative Modeling},
+    year = {2024},
+    pdf = {https://timrudner.com/uap},
+    bibtex_show = {true},
+    abstract = {Fine-tuning off-the-shelf pre-trained neural networks has become the default starting point for a wide range of challenging prediction tasks---especially in computer vision and natural language processing, where pre-trained models trained on millions or even billions of data points are publicly available and can be fine-tuned with a moderate compute budget. However, while fine-tuned models have been shown to significantly improve predictive performance in several respects compared to models trained from scratch, they can exhibit poor calibration and fail to reliably identify challenging distribution shifts. In this paper, we improve uncertainty quantification in fine-tuned models by constructing an uncertainty-aware fine-tuning prior and deriving a tractable variational objective for inference. The prior assigns high probability density to parameters that induce predictive functions with high uncertainty on data points that are meaningfully different from the data used for fine-tuning. We evaluate models trained with this prior on different transfer learning tasks and show that fine-tuning with uncertainty-aware priors significantly improves calibration, selective prediction, and semantic shift detection on computer vision and natural language classification tasks.},
+    selected = {true},
+    placeholder = {},
+    area = {Reliable Uncertainty Quantification},
+}
+
+@inproceedings{
+    rudner2024odrl_tech,
+    title = {A Variational Formulation of Reinforcement Learning in Infinite-Horizon Markov Decision Processes},
+    author = {Tim G. J. Rudner},
+    booktitle = {ICML Workshop on Foundations of Reinforcement Learning & Control},
+    booktitle_show = {ICML Workshop on Foundations of Reinforcement Learning & Control},
+    year = {2024},
+    pdf = {https://timrudner.com/odrl_tech},
+    bibtex_show = {true},
+    abstract = {Reinforcement learning in infinite-horizon Markov decision processes (MDPs) is typically framed as expected discounted return maximization. In this paper, we formulate an alternative principle for optimal sequential decision-making in infinite-horizon MDPs: variational Bayesian inference in transdimensional probabilistic models. In particular, we specify a probabilistic model over random-length state--action trajectories and consider the variational problem of finding an approximation to the posterior distribution over random-length state--action trajectories conditioned on state--action trajectories that reflect some desired behavior. We derive a tractable variational objective for infinite-horizon settings, prove a variational dynamic-discount policy iteration theorem, show that fixed discount factor KL-regularized reinforcement learning objectives are special cases of dynamic-discount variational objectives, and prove that learning dynamic discount factors is optimal.},
+    placeholder = {},
+}
+
+@inproceedings{
+    sun2024gaga,
+    title = {Geometry-Aware Autoencoders for Metric Learning and Generative Modeling on Data Manifolds},
+    author = {Xingzhi Sun and Danqi Liao and Kincaid MacDonald and Yanlei Zhang and Guillaume Huguet and Guy Wolf and Ian Adelstein and Tim G. J. Rudner and Smita Krishnaswamy},
+    booktitle = {ICML Workshop on Geometry-grounded Representation Learning & Generative Modeling},
+    booktitle_show = {ICML Workshop on Geometry-grounded Representation Learning & Generative Modeling},
+    year = {2024},
+    pdf = {https://timrudner.com/gaga},
+    bibtex_show = {true},
+    abstract = {Non-linear dimensionality reduction methods have proven successful at learning low-dimensional representations of high-dimensional point clouds on or near data manifolds. However, existing methods are not easily extensible— for large datasets, it is prohibitively expensive to add new points to these embeddings. As a result, it is very difficult to use existing embeddings generatively, to sample new points on and along these manifolds. In this paper, we propose GAGA (geometry-aware generative autoencoders) a framework which merges the power of generative deep learning with non-linear manifold learning by: 1) learning generalizable geometry-aware neural network embeddings based on non-linear dimensionality reduction methods like PHATE and diffusion maps, 2) deriving a non-euclidean pullback metric on the data space to generate points faithfully along data manifold geodesics, and 3) learning a flow on the manifold that allows us to transport populations. We provide illustration on easily-interpretable synthetic datasets and showcase results on simulated and real single cell datasets. We show that the geodesic-based generation can be especially important for scientific datasets where the manifold represents a state space and geodesics can represent dynamics of entities over this space.},
+    placeholder = {},
+}
+
+@inproceedings{
     gupta2024scr,
     title = {Pre-trained Text-to-Image Diffusion Models Are Versatile Representation Learners for Control},
     author = {Gunshi Gupta and Karmesh Yadav and Yarin Gal and Dhruv Batra and Zsolt Kira And Cong Lu and Tim G. J. Rudner},
     booktitle = {ICLR Workshop on Generative Models for Decision Making},
-    booktitle_show = {ICLR Workshop on Generative Models for Decision Making},
+    booktitle_show = {ICLR Workshop on Generative Models for Decision Making (Outstanding Paper Award)},
     year = {2024},
     pdf = {https://timrudner.com/scr},
     bibtex_show = {true},
     abstract = {Vision- and language-guided embodied AI requires a fine-grained understanding of the physical world through language and visual inputs. Such capabilities are difficult to learn solely from task-specific data, which has led to the emergence of pre-trained vision-language models as a tool for transferring representations learned from internet-scale data to downstream tasks and new domains. However, commonly used contrastively trained representations such as in CLIP have been shown to fail at enabling embodied agents to gain sufficiently fine-grained scene understanding---a capability vital for control. To address this shortcoming, we consider representations from pre-trained text-to-image diffusion models, which are explicitly optimized to generate image from text prompts and as such, contain text-conditioned representations that reflect highly fine-grained visuo-spatial information. Using pre-trained text-to-image diffusion models, we construct {\em \ouralgolong} which allow learning downstream control policies that generalize to complex, open-ended environments. We show that policies learned using \ouralgolong are competitive with state-of-the-art approaches on a broad range of simulated control tasks and exhibit high success rates on difficult control tasks that require generalization to unseen objects at test time. Most notably, we show that \ouralgolong enable learning policies that exhibit state-of-the-art performance on OVMM, a difficult open-vocabulary navigation benchmark.},
+    code = {https://github.com/ykarmesh/stable-control-representations},
+    talk = {https://iclr.cc/virtual/2024/workshop/20573#wse-detail-22262},
     selected = {true},
     placeholder = {},
 }
@@ -94,21 +170,6 @@
     preview = {li2024bostudy.png},
     poster = {li2024bostudy.pdf},
     code = {https://github.com/yucenli/bnn-bo},
-}
-
-@inproceedings{
-    rudner2024uap,
-    title = {Uncertainty-Aware Priors for Fine-Tuning Pre-trained Vision and Language Models},
-    author = {Tim G. J. Rudner and Xiang Pan and Yucen Lily Li and Ravid Shwartz-Ziv and Andrew Gordon Wilson},
-    booktitle = {Preprint},
-    booktitle_show = {Preprint},
-    year = {2024},
-    pdf = {https://timrudner.com/uap},
-    bibtex_show = {true},
-    abstract = {Fine-tuning off-the-shelf pre-trained neural networks has become the default starting point for a wide range of challenging prediction tasks---especially in computer vision and natural language processing, where pre-trained models trained on millions or even billions of data points are publicly available and can be fine-tuned with a moderate compute budget. However, while fine-tuned models have been shown to significantly improve predictive performance in several respects compared to models trained from scratch, they can exhibit poor calibration and fail to reliably identify challenging distribution shifts. In this paper, we improve uncertainty quantification in fine-tuned models by constructing an uncertainty-aware fine-tuning prior and deriving a tractable variational objective for inference. The prior assigns high probability density to parameters that induce predictive functions with high uncertainty on data points that are meaningfully different from the data used for fine-tuning. We evaluate models trained with this prior on different transfer learning tasks and show that fine-tuning with uncertainty-aware priors significantly improves calibration, selective prediction, and semantic shift detection on computer vision and natural language classification tasks.},
-    selected = {true},
-    placeholder = {},
-    area = {Reliable Uncertainty Quantification},
 }
 
 @inproceedings{
@@ -240,21 +301,6 @@
     selected = {true},
     placeholder = {},
     area = {Clinical Decision-Making and Drug Discovery},
-}
-
-@inproceedings{
-    feng2023attackingbayes,
-    title = {Attacking Bayes: Are Bayesian Neural Networks Inherently Robust?},
-    author = {Yunzhen Feng and Tim G. J. Rudner and Nikolaos Tsilivis and Julia Kempe},
-    booktitle = {Fifth Symposium on Advances in Approximate Bayesian Inference},
-    booktitle_show = {Symposium on Advances in Approximate Bayesian Inference},
-    booktitle_abbr = {AABI},
-    year = {2023},
-    pdf = {https://timrudner.com/attacking-bayes},
-    bibtex_show = {true},
-    abstract = {This work examines the claim in recent work that Bayesian neural networks (BNNs) are inherently robust to adversarial perturbations. To study this question, we investigate whether it is possible to successfully break state-of-the-art BNN inference methods and prediction pipelines using even relatively unsophisticated attacks for three tasks: (1) label prediction under the posterior predictive mean, (2) adversarial example detection with Bayesian predictive uncertainty, and (3) semantic shift detection. We find that BNNs trained with state-of-the-art approximate inference methods, and even with HMC inference, are highly susceptible to adversarial attacks and identify various conceptual and experimental errors in previous works that claimed inherent adversarial robustness of BNNs. We conclusively demonstrate that BNNs and uncertainty-aware Bayesian prediction pipelines are not inherently robust against adversarial attacks and open up avenues for the development of Bayesian defenses for Bayesian prediction pipelines.},
-    preview = {feng2023attackingbayes.png},
-    poster = {feng2023attackingbayes.pdf},
 }
 
 @inproceedings{
