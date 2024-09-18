@@ -5,6 +5,7 @@ permalink: /
 subtitle: >
   <b>Faculty Fellow</b>, <a href='https://cds.nyu.edu/'>Center for Data Science</a>, New York University<br>
   <b>AI Fellow</b>, <a href='https://cset.georgetown.edu/'>Center for Security & Emerging Technology</a>, Georgetown University<br>
+# <b>Safety Team Lead</b>, <a href='https://huggingface.co/OpenMeditron'>Open Meditron Initiative</a><br>
   
 
 profile:

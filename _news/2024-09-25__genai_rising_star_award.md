@@ -1,0 +1,9 @@
+---
+layout: post
+title: Rising Star in Generative AI Award
+date: 2024-09-25 12:00:00-0000
+inline: true
+related_posts: false
+---
+
+I was selected as a **<a href="https://genai-workshop.cs.umass.edu/" target="_blank">Rising Star in Generative AI</a>**!
