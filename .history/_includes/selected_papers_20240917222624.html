@@ -1,0 +1,8 @@
+
+          <div class="publications">
+            For a complete list, please see: [<b><a href="publications">Publications</a></b>] or [<b><a href="https://scholar.google.com/citations?user=MbBntPgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a></b>]
+            
+            <br><br><br>
+            {% bibliography --group_by placeholder -f {{ site.scholar.bibliography }} -q @*[selected=true,area=selected]* %}
+
+          </div>
