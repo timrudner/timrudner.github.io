@@ -15,7 +15,7 @@ For an up-to-date list, please see my <b><a href="https://scholar.google.com/cit
 
 <br>
 <br>
-<h2>Policy Reports & Issue Briefs</h2>
+<h3>AI Governance Publications</h3>
 
 {% bibliography -f {{ site.scholar_policy.bibliography }} %}
 

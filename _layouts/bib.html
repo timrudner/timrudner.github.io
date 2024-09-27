@@ -156,6 +156,18 @@
           {{ entry.note | strip }}
         </div>
 
+        <!-- Award line (if exists) -->
+        {% if entry.award %}
+          <div class="award" style="color: rgb(214, 104, 92); font-weight: bold;">
+            {{ entry.award }}
+          </div>
+        {% endif %}
+        {% if entry.award2 %}
+          <div class="award2" style="color: rgb(214, 104, 92); font-weight: bold;">
+            {{ entry.award2 }}
+          </div>
+        {% endif %}
+
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}

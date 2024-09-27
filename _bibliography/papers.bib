@@ -3,32 +3,40 @@
 
 
 @inproceedings{
-    probasco2024dss,
-    title = {Not Oracles of the Battlefield: Safety Considerations for AI-Based Military Decision Support Systems},
-    author = {Emilia Probasco and Matthew Burtell and Helen Toner and Tim G. J. Rudner},
-    booktitle = {AAAI Conference on Artificial Intelligence, Ethics, and Society (Forthcoming)},
-    booktitle_show = {AAAI Conference on Artificial Intelligence, Ethics, and Society (Forthcoming)},
-    booktitle_abbr = {AIES},
+    gupta2024scr,
+    title = {Pre-trained Text-to-Image Diffusion Models Are Versatile Representation Learners for Control},
+    author = {Gunshi Gupta and Karmesh Yadav and Yarin Gal and Dhruv Batra and Zsolt Kira And Cong Lu and Tim G. J. Rudner},
+    booktitle = {Advances in Neural Information Processing Systems 37},
+    booktitle_show = {Advances in Neural Information Processing Systems},
+    booktitle_abbr = {NeurIPS},
     year = {2024},
+    pdf = {https://timrudner.com/scr},
     bibtex_show = {true},
-    abstract = {AI-based military decision support systems that help commanders observe, orient, decide, and act on the battlefield are highly sought after by military leadership. With the advent of large language models, AI developers have begun advertising automated AI-based decision support systems designed to both analyze and act on data from the battlefield. While the desire to use decision support systems to make better decisions on the battlefield is unsurprising, the responsible deployment of such systems requires a clear understanding of the capabilities and limitations of modern machine learning models. This paper reviews recently proposed uses of AI-enables decision support systems (DSS), provides a simplified framework for considering AI-DSS capabilities and limitations, and recommends practical risk mitigations commanders might employ when operating with an AI-enabled DSS.},
+    abstract = {Vision- and language-guided embodied AI requires a fine-grained understanding of the physical world through language and visual inputs. Such capabilities are difficult to learn solely from task-specific data, which has led to the emergence of pre-trained vision-language models as a tool for transferring representations learned from internet-scale data to downstream tasks and new domains. However, commonly used contrastively trained representations such as in CLIP have been shown to fail at enabling embodied agents to gain sufficiently fine-grained scene understanding---a capability vital for control. To address this shortcoming, we consider representations from pre-trained text-to-image diffusion models, which are explicitly optimized to generate image from text prompts and as such, contain text-conditioned representations that reflect highly fine-grained visuo-spatial information. Using pre-trained text-to-image diffusion models, we construct {\em \ouralgolong} which allow learning downstream control policies that generalize to complex, open-ended environments. We show that policies learned using \ouralgolong are competitive with state-of-the-art approaches on a broad range of simulated control tasks and exhibit high success rates on difficult control tasks that require generalization to unseen objects at test time. Most notably, we show that \ouralgolong enable learning policies that exhibit state-of-the-art performance on OVMM, a difficult open-vocabulary navigation benchmark.},
+    code = {https://github.com/ykarmesh/stable-control-representations},
+    talk = {https://iclr.cc/virtual/2024/workshop/20573#wse-detail-22262},
+    selected = {true},
+    award = {Outstanding Paper Award, ICLR 2024 Workshop on GenAI for Decision-Making},
+    award2 = {NeurIPS Spotlight Talk},
+    placeholder = {},
+    area = {selected},
 }
 
 @inproceedings{
-    feng2024attackingbayes,
-    title = {Attacking Bayes: On the Adversarial Robustness of Bayesian Neural Networks},
-    author = {Yunzhen Feng and Tim G. J. Rudner and Nikolaos Tsilivis and Julia Kempe},
-    cofirstauthors = {1, 2},
-    booktitle = {Transactions on Machine Learning Research},
-    booktitle_show = {Transactions on Machine Learning Research},
-    booktitle_abbr = {TMLR},
-    issn={2835-8856},
-    year={2024},
-    pdf = {https://timrudner.com/attacking-bayes},
+    rudner2024gap,
+    title = {Mind the GAP: Improving Robustness to Subpopulation Shifts with Group-Aware Priors},
+    author = {Tim G. J. Rudner and Ya Shi Zhang and Andrew Gordon Wilson and Julia Kempe},
+    booktitle = {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+    booktitle_show = {International Conference on Artificial Intelligence and Statistics},
+    booktitle_abbr = {AISTATS},
+    year = {2024},
+    pdf = {https://timrudner.com/gap},
     bibtex_show = {true},
-    abstract = {Adversarial examples have been shown to cause neural networks to fail on a wide range of vision and language tasks, but recent work has claimed that Bayesian neural networks (BNNs) are inherently robust to adversarial perturbations. In this work, we examine this claim. To study the adversarial robustness of BNNs, we investigate whether it is possible to successfully break state-of-the-art BNN inference methods and prediction pipelines using even relatively unsophisticated attacks for three tasks: (1) label prediction under the posterior predictive mean, (2) adversarial example detection with Bayesian predictive uncertainty, and (3) semantic shift detection. We find that BNNs trained with state-of-the-art approximate inference methods, and even BNNs trained with Hamiltonian Monte Carlo, are highly susceptible to adversarial attacks. We also identify various conceptual and experimental errors in previous works that claimed inherent adversarial robustness of BNNs and conclusively demonstrate that BNNs and uncertainty-aware Bayesian prediction pipelines are not inherently robust against adversarial attacks.},
-    code = {https://github.com/timrudner/attacking-bayes},
-    award = {Certification Award},
+    abstract = {Machine learning models often perform poorly under subpopulation shifts in the data distribution. Developing methods that allow machine learning models to better generalize to such shifts is crucial for safe deployment in real-world settings. In this paper, we develop a family of group-aware prior (GAP) distributions over neural network parameters that explicitly favor models that generalize well under subpopulation shifts. We design a simple group-aware prior that only requires access to a small set of data with group information and demonstrate that training with this prior yields state-of-the-art performance---even when only retraining the final layer of a previously trained non-robust model. Group aware-priors are conceptually simple, complementary to existing approaches, such as attribute pseudo labeling and data reweighting, and open up promising new avenues for harnessing Bayesian inference to enable robustness to subpopulation shifts.},
+    selected = {true},
+    award = {AISTATS Notable Paper Award},
+    placeholder = {},
+    area = {selected},
 }
 
 @inproceedings{
@@ -53,7 +61,7 @@
 @inproceedings{
     lotfi2024pacllm,
     title = {Non-Vacuous Generalization Bounds for Large Language Models},
-    author = {Sanae Lotfi and Marc Finzi and Yilun Kuang and Tim G. J. Rudner and Micah Goldblum and Andrew Gordon Wilson},
+    author = {Sanae Lotfi* and Marc Finzi* and Yilun Kuang* and Tim G. J. Rudner and Micah Goldblum and Andrew Gordon Wilson},
     booktitle = {Proceedings of the 41th International Conference on Machine Learning},
     booktitle_show = {International Conference on Machine Learning},
     booktitle_abbr = {ICML},
@@ -127,36 +135,20 @@
 }
 
 @inproceedings{
-    gupta2024scr,
-    title = {Pre-trained Text-to-Image Diffusion Models Are Versatile Representation Learners for Control},
-    author = {Gunshi Gupta and Karmesh Yadav and Yarin Gal and Dhruv Batra and Zsolt Kira And Cong Lu and Tim G. J. Rudner},
-    booktitle = {ICLR Workshop on Generative Models for Decision Making},
-    booktitle_show = {ICLR Workshop on Generative Models for Decision Making},
-    year = {2024},
-    pdf = {https://timrudner.com/scr},
+    feng2024attackingbayes,
+    title = {Attacking Bayes: On the Adversarial Robustness of Bayesian Neural Networks},
+    author = {Yunzhen Feng and Tim G. J. Rudner and Nikolaos Tsilivis and Julia Kempe},
+    cofirstauthors = {1, 2},
+    booktitle = {Transactions on Machine Learning Research},
+    booktitle_show = {Transactions on Machine Learning Research},
+    booktitle_abbr = {TMLR},
+    issn={2835-8856},
+    year={2024},
+    pdf = {https://timrudner.com/attacking-bayes},
     bibtex_show = {true},
-    abstract = {Vision- and language-guided embodied AI requires a fine-grained understanding of the physical world through language and visual inputs. Such capabilities are difficult to learn solely from task-specific data, which has led to the emergence of pre-trained vision-language models as a tool for transferring representations learned from internet-scale data to downstream tasks and new domains. However, commonly used contrastively trained representations such as in CLIP have been shown to fail at enabling embodied agents to gain sufficiently fine-grained scene understanding---a capability vital for control. To address this shortcoming, we consider representations from pre-trained text-to-image diffusion models, which are explicitly optimized to generate image from text prompts and as such, contain text-conditioned representations that reflect highly fine-grained visuo-spatial information. Using pre-trained text-to-image diffusion models, we construct {\em \ouralgolong} which allow learning downstream control policies that generalize to complex, open-ended environments. We show that policies learned using \ouralgolong are competitive with state-of-the-art approaches on a broad range of simulated control tasks and exhibit high success rates on difficult control tasks that require generalization to unseen objects at test time. Most notably, we show that \ouralgolong enable learning policies that exhibit state-of-the-art performance on OVMM, a difficult open-vocabulary navigation benchmark.},
-    code = {https://github.com/ykarmesh/stable-control-representations},
-    talk = {https://iclr.cc/virtual/2024/workshop/20573#wse-detail-22262},
-    selected = {true},
-    placeholder = {},
-    area = {selected},
-}
-
-@inproceedings{
-    rudner2024gap,
-    title = {Mind the GAP: Improving Robustness to Subpopulation Shifts with Group-Aware Priors},
-    author = {Tim G. J. Rudner and Ya Shi Zhang and Andrew Gordon Wilson and Julia Kempe},
-    booktitle = {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
-    booktitle_show = {International Conference on Artificial Intelligence and Statistics},
-    booktitle_abbr = {AISTATS},
-    year = {2024},
-    pdf = {https://timrudner.com/gap},
-    bibtex_show = {true},
-    abstract = {Machine learning models often perform poorly under subpopulation shifts in the data distribution. Developing methods that allow machine learning models to better generalize to such shifts is crucial for safe deployment in real-world settings. In this paper, we develop a family of group-aware prior (GAP) distributions over neural network parameters that explicitly favor models that generalize well under subpopulation shifts. We design a simple group-aware prior that only requires access to a small set of data with group information and demonstrate that training with this prior yields state-of-the-art performance---even when only retraining the final layer of a previously trained non-robust model. Group aware-priors are conceptually simple, complementary to existing approaches, such as attribute pseudo labeling and data reweighting, and open up promising new avenues for harnessing Bayesian inference to enable robustness to subpopulation shifts.},
-    selected = {true},
-    placeholder = {},
-    area = {selected},
+    abstract = {Adversarial examples have been shown to cause neural networks to fail on a wide range of vision and language tasks, but recent work has claimed that Bayesian neural networks (BNNs) are inherently robust to adversarial perturbations. In this work, we examine this claim. To study the adversarial robustness of BNNs, we investigate whether it is possible to successfully break state-of-the-art BNN inference methods and prediction pipelines using even relatively unsophisticated attacks for three tasks: (1) label prediction under the posterior predictive mean, (2) adversarial example detection with Bayesian predictive uncertainty, and (3) semantic shift detection. We find that BNNs trained with state-of-the-art approximate inference methods, and even BNNs trained with Hamiltonian Monte Carlo, are highly susceptible to adversarial attacks. We also identify various conceptual and experimental errors in previous works that claimed inherent adversarial robustness of BNNs and conclusively demonstrate that BNNs and uncertainty-aware Bayesian prediction pipelines are not inherently robust against adversarial attacks.},
+    code = {https://github.com/timrudner/attacking-bayes},
+    award = {TMLR Certification Award},
 }
 
 @inproceedings{
@@ -227,6 +219,7 @@
     code = {https://github.com/ngruver/NOS},
     talk = {https://neurips.cc/virtual/2023/poster/71899},
     selected = {true},
+    award = {NeurIPS Spotlight Talk},
     placeholder = {},
     area = {Clinical Decision-Making and Drug Discovery},
 }
@@ -321,6 +314,7 @@
     abstract = {Offline reinforcement learning has shown great promise in leveraging large pre-collected datasets for policy learning, allowing agents to forgo often-expensive online data collection. However, offline reinforcement learning from visual observations with continuous action spaces remains under-explored, with a limited understanding of the key challenges in this complex domain. In this paper, we establish simple baselines for continuous control in the visual domain and introduce a suite of benchmarking tasks for offline reinforcement learning from visual observations designed to better represent the data distributions present in real-world offline RL problems and guided by a set of desiderata for offline RL from visual observations, including robustness to visual distractions and visually identifiable changes in dynamics. Using this suite of benchmarking tasks, we show that simple modifications to two popular vision-based online reinforcement learning algorithms, DreamerV2 and DrQ-v2, suffice to outperform existing offline RL methods and establish competitive baselines for continuous control in the visual domain. We rigorously evaluate these algorithms and perform an empirical evaluation of the differences between state-of-the-art model-based and model-free offline RL methods for continuous control from visual observations. All code and data used in this evaluation are open-sourced to facilitate progress in this domain.},
     preview = {lu2023challenges.png},
     code = {https://github.com/conglu1997/v-d4rl},
+    award = {Best Paper Award, RSS 2022 Workshop on Learning from Diverse, Offline Data},
 }
 
 @inproceedings{
@@ -410,6 +404,7 @@
     code = {https://github.com/google/uncertainty-baselines/tree/main/experimental/plex},
     blog = {https://ai.googleblog.com/2022/07/towards-reliability-in-deep-learning.html},
     selected = {true},
+    award = {Contributed Talk, ICML 2022 Workshop on Pre-training: Perspectives, Pitfalls, and Paths Forward},
     placeholder = {},
     area = {selected},
 }
@@ -470,6 +465,7 @@
     poster = {band2021benchmarking.pdf},
     code = {https://github.com/google/uncertainty-baselines/tree/main/baselines/diabetic_retinopathy_detection},
     selected = {true},
+    award = {Spotlight Talk, NeurIPS 2021 Workshop on Distribution Shifts: Connecting Methods and Applications},
     placeholder = {},
     area = {selected},
 }
@@ -540,6 +536,7 @@
     abstract = {Applying probabilistic models to reinforcement learning (RL) enables the application of powerful optimisation tools such as variational inference to RL. However, existing inference frameworks and their algorithms pose significant challenges for learning optimal policies, e.g., the absence of mode capturing behaviour in pseudo-likelihood methods and difficulties learning deterministic policies in maximum entropy RL based approaches. We propose VIREL, a novel, theoretically grounded probabilistic inference framework for RL that utilises a parametrised action-value function to summarise future dynamics of the underlying MDP. This gives VIREL a mode-seeking form of KL divergence, the ability to learn deterministic optimal polices naturally from inference and the ability to optimise value functions and policies in separate, iterative steps. In applying variational expectation-maximisation to VIREL we thus show that the actor-critic algorithm can be reduced to expectation-maximisation, with policy improvement equivalent to an E-step and policy evaluation to an M-step. We then derive a family of actor-critic methods from VIREL, including a scheme for adaptive exploration. Finally, we demonstrate that actor-critic algorithms from this family outperform state-of-the-art methods based on soft value functions in several domains.},
     preview = {fellows2019virel.png},
     code = {https://github.com/AnujMahajanOxf/VIREL},
+    award = {NeurIPS Spotlight Talk},
 }
 
 @inproceedings{
@@ -552,6 +549,7 @@
     bibtex_show = {true},
     pdf = {Rudner2019_The_Natural_Neural_Tangent_Kernel-_Neural_Network_Training_Dynamics_under_Natural_Gradient_Descent.pdf},
     preview = {rudner2019naturalntk.png},
+    award = {Contributed Talk, NeurIPS 2021 Workshop on Bayesian Deep Learning},
 }
 
 @inproceedings{
